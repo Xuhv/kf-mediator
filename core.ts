@@ -5,6 +5,9 @@
 
 import type { Handler, Notifier, Sender } from "./types.ts"
 
+/**
+ * A constant is a natural singleton.
+ */
 const registry = new Map<string, Handler | Handler[]>()
 
 /**
